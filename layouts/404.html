@@ -1,0 +1,50 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+<div class="container">
+
+  <h1 style="text-align: center">{{ i18n "page_not_found" }}</h1>
+  <p style="text-align: center">{{ i18n "404_recommendations" }}</p>
+
+  {{ $posts_len := len (where .Site.RegularPages "Section" "post") }}
+  {{ if gt $posts_len 0 }}
+  <h2>{{ i18n "posts" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "post") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $pubs_len := len (where .Site.RegularPages "Section" "publication") }}
+  {{ if gt $pubs_len 0 }}
+  <h2>{{ i18n "publications" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "publication") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $theses_len := len (where .Site.RegularPages "Section" "theses") }}
+  {{ if gt $theses_len 0 }}
+  <h2>{{ i18n "theses" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "theses") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+  {{ $projects_len := len (where .Site.RegularPages "Section" "project") }}
+  {{ if gt $projects_len 0 }}
+  <h2>{{ i18n "projects" }}</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "project") }}
+  <ul>
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  </ul>
+  {{ end }}
+  {{ end }}
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
