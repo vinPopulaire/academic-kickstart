@@ -140,6 +140,9 @@
 - id: projects
   translation: Ερευνητικά προγράμματα
 
+- id: theses
+  translation: Διπλωματικές εργασίες
+
 # Error 404
 
 - id: page_not_found
