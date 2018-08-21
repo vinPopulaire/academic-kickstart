@@ -1,0 +1,21 @@
+# Theme metadata
+name = "giorgos"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#5F021F"
+primary_light = "#FF6771"
+primary_dark = "#DA2536"
+
+# Menu
+menu_primary = "#5F021F"
+menu_text = "#fff"
+menu_text_active = "#9C9F84"
+menu_title = "#fff"
+
+# Backgrounds
+background = "#FFFFFF"
+home_section_odd = "#FFFFFF"
+home_section_even = "#EEEEEE"
