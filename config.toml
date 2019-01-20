@@ -112,8 +112,8 @@ Zografou, Greece, GR 157 80 """
   #   3: OpenStreetMap (Mapbox)
   map = 2
   map_api_key = ""
-  latitude = "37.97939"
-  longitude = "23.78339"
+  latitude = "37.97950"
+  longitude = "23.78283"
   zoom = 17
 
   # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
